@@ -46,12 +46,9 @@ public class dockerWithChrome implements ITestListener{
 		try {
 			url = new URL("http://localhost:4444/wd/hub");
 			prop = new Properties();
-			String filepath = System.getProperty("user.home");
-			FileInputStream inputstm = new FileInputStream("C:\\Users\\vijayalakshmi.s\\OneDrive - CBTS I OnX\\Viji\\Eclipse_Workspace\\CBTS_seleniumgrid_docker_Project-master\\CBTS_seleniumgrid_docker_Project-master\\src\\test\\java\\qa.properties");
-			prop.load(inputstm);
-		}
-		catch (FileNotFoundException e) {
-			e.printStackTrace();
+			//String filepath = System.getProperty("user.home");
+			//FileInputStream inputstm = new FileInputStream("C:\\Users\\vijayalakshmi.s\\OneDrive - CBTS I OnX\\Viji\\Eclipse_Workspace\\CBTS_seleniumgrid_docker_Project-master\\CBTS_seleniumgrid_docker_Project-master\\src\\test\\java\\qa.properties");
+			//prop.load(inputstm);
 		}
 		catch (IOException e) {
 			e.printStackTrace();
@@ -81,8 +78,8 @@ public class dockerWithChrome implements ITestListener{
 		String[] browsers = {"chrome", "firefox", "edge"};
 		Random random = new Random();
 		int randomIndex = random.nextInt(browsers.length);
-		//capabilities.setBrowserName(browsers[randomIndex]);
-		capabilities.setBrowserName("chrome");
+		capabilities.setBrowserName(browsers[randomIndex]);
+		//capabilities.setBrowserName("chrome");
 		capabilities.setVersion("latest");
 		driver = new RemoteWebDriver(url, capabilities);
 		//driver = WebDriverManager.chromedriver().create();

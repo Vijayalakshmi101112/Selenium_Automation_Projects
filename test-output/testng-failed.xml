@@ -13,18 +13,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- testcases.homePageTC3 -->
-      <class name="testcases.homePageTC2">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="tc001_Login"/>
-        </methods>
-      </class> <!-- testcases.homePageTC2 -->
-      <class name="testcases.ChromeTest2">
-        <methods>
-          <include name="test"/>
-        </methods>
-      </class> <!-- testcases.ChromeTest2 -->
     </classes>
   </test> <!-- CBTS Automation Testing(failed) -->
 </suite> <!-- Failed suite [Suite] -->
