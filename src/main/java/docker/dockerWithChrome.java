@@ -78,8 +78,8 @@ public class dockerWithChrome implements ITestListener{
 		String[] browsers = {"chrome", "firefox", "edge"};
 		Random random = new Random();
 		int randomIndex = random.nextInt(browsers.length);
-		capabilities.setBrowserName(browsers[randomIndex]);
-		//capabilities.setBrowserName("chrome");
+		//capabilities.setBrowserName(browsers[randomIndex]);
+		capabilities.setBrowserName("chrome");
 		capabilities.setVersion("latest");
 		driver = new RemoteWebDriver(url, capabilities);
 		//driver = WebDriverManager.chromedriver().create();

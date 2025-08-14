@@ -1,41 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-13T20:16:09 IST" name="Suite" finished-at="2025-08-13T20:19:11 IST" duration-ms="182425">
+  <suite started-at="2025-08-13T22:07:32 IST" name="Suite" finished-at="2025-08-13T22:08:19 IST" duration-ms="46332">
     <groups>
     </groups>
-    <test started-at="2025-08-13T20:16:09 IST" name="CBTS Automation Testing" finished-at="2025-08-13T20:19:11 IST" duration-ms="182425">
+    <test started-at="2025-08-13T22:07:32 IST" name="CBTS Automation Testing" finished-at="2025-08-13T22:08:19 IST" duration-ms="46332">
       <class name="testcases.homePageTC3">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.homePageTC3@5656be13]" started-at="2025-08-13T20:16:09 IST" name="setUp" finished-at="2025-08-13T20:16:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.homePageTC3@5656be13]" started-at="2025-08-13T22:07:33 IST" name="setUp" finished-at="2025-08-13T22:07:33 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="tc002_VerifySearchFunctionality()[pri:0, instance:testcases.homePageTC3@5656be13]" started-at="2025-08-13T20:16:09 IST" name="tc002_VerifySearchFunctionality" finished-at="2025-08-13T20:19:11 IST" duration-ms="182085" status="FAIL">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method signature="tc002_VerifySearchFunctionality()[pri:0, instance:testcases.homePageTC3@5656be13]" started-at="2025-08-13T22:07:33 IST" name="tc002_VerifySearchFunctionality" finished-at="2025-08-13T22:08:19 IST" duration-ms="45996" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+              <![CDATA[java.io.IOException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@7fcca23f rejected from java.util.concurrent.ThreadPoolExecutor@78bbe993[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 124]
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'SUBBIAH440G9', ip: '192.168.29.138', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: edge}], desiredCapabilities=Capabilities {browserName: edge, version: latest}}]
-Capabilities {}]]>
+Command: [f14e5253-cb8f-4f98-a1e3-fac501057633, isElementDisplayed {id=50d9b326-2159-4bf8-b3a2-0823894010bf}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 141.0, container:hostname: 1ae758e81fbc, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 6.6.87.2-microsoft-standard..., moz:processID: 1119, moz:profile: /tmp/rust_mozprofile05gsdO, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdpEnabled: false, se:containerName: 1ae758e81fbc, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.18.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Element: [[RemoteWebDriver: firefox on LINUX (f14e5253-cb8f-4f98-a1e3-fac501057633)] -> xpath: //div[contains(@class,'breadcrumb-all-filters-button-container')]//span[contains(text(),'results for')]]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+              <![CDATA[org.openqa.selenium.WebDriverException: java.io.IOException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@7fcca23f rejected from java.util.concurrent.ThreadPoolExecutor@78bbe993[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 124]
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'SUBBIAH440G9', ip: '192.168.29.138', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: edge}], desiredCapabilities=Capabilities {browserName: edge, version: latest}}]
-Capabilities {}
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:146)
-at docker.dockerWithChrome.onTestStart(dockerWithChrome.java:84)
-at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:106)
-at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:275)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:622)
+Command: [f14e5253-cb8f-4f98-a1e3-fac501057633, isElementDisplayed {id=50d9b326-2159-4bf8-b3a2-0823894010bf}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 141.0, container:hostname: 1ae758e81fbc, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 6.6.87.2-microsoft-standard..., moz:processID: 1119, moz:profile: /tmp/rust_mozprofile05gsdO, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdpEnabled: false, se:containerName: 1ae758e81fbc, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.18.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Element: [[RemoteWebDriver: firefox on LINUX (f14e5253-cb8f-4f98-a1e3-fac501057633)] -> xpath: //div[contains(@class,'breadcrumb-all-filters-button-container')]//span[contains(text(),'results for')]]
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:39)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:307)
+at repository.homePage.searchkeyword(homePage.java:122)
+at testcases.homePageTC3.tc002_VerifySearchFunctionality(homePageTC3.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
@@ -45,57 +60,88 @@ at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:83)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:119)
-at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:55)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:39)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-... 16 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 180000 ms
-at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
-at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
-... 29 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 180000 ms
-at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
-at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
-at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:669)
-at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:744)
-at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:469)
-at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-... 1 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc002_VerifySearchFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.homePageTC3@5656be13]" started-at="2025-08-13T20:19:11 IST" name="tearDown" finished-at="2025-08-13T20:19:11 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.homePageTC3@5656be13]" started-at="2025-08-13T22:08:19 IST" name="tearDown" finished-at="2025-08-13T22:08:19 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.homePageTC3 -->
       <class name="testcases.homePageTC2">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.homePageTC2@48f2bd5b]" started-at="2025-08-13T20:16:09 IST" name="setUp" finished-at="2025-08-13T20:16:09 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.homePageTC2@48f2bd5b]" started-at="2025-08-13T22:07:33 IST" name="setUp" finished-at="2025-08-13T22:07:33 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="tc001_Login()[pri:0, instance:testcases.homePageTC2@48f2bd5b]" started-at="2025-08-13T20:16:09 IST" name="tc001_Login" finished-at="2025-08-13T20:16:50 IST" duration-ms="40843" status="PASS">
+        <test-method signature="tc001_Login()[pri:0, instance:testcases.homePageTC2@48f2bd5b]" started-at="2025-08-13T22:07:33 IST" name="tc001_Login" finished-at="2025-08-13T22:08:17 IST" duration-ms="44562" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[The element with the reference dc1b75c7-bc69-485c-91c4-a1666301405f is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'SUBBIAH440G9', ip: '192.168.29.138', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [f14e5253-cb8f-4f98-a1e3-fac501057633, clickElement {id=dc1b75c7-bc69-485c-91c4-a1666301405f}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 141.0, container:hostname: 1ae758e81fbc, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 6.6.87.2-microsoft-standard..., moz:processID: 1119, moz:profile: /tmp/rust_mozprofile05gsdO, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdpEnabled: false, se:containerName: 1ae758e81fbc, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.18.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Element: [[RemoteWebDriver: firefox on LINUX (f14e5253-cb8f-4f98-a1e3-fac501057633)] -> xpath: //div[@id='nav-link-accountList']]
+Session ID: f14e5253-cb8f-4f98-a1e3-fac501057633]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element with the reference dc1b75c7-bc69-485c-91c4-a1666301405f is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'SUBBIAH440G9', ip: '192.168.29.138', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [f14e5253-cb8f-4f98-a1e3-fac501057633, clickElement {id=dc1b75c7-bc69-485c-91c4-a1666301405f}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 141.0, container:hostname: 1ae758e81fbc, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 6.6.87.2-microsoft-standard..., moz:processID: 1119, moz:profile: /tmp/rust_mozprofile05gsdO, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdpEnabled: false, se:containerName: 1ae758e81fbc, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.18.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Element: [[RemoteWebDriver: firefox on LINUX (f14e5253-cb8f-4f98-a1e3-fac501057633)] -> xpath: //div[@id='nav-link-accountList']]
+Session ID: f14e5253-cb8f-4f98-a1e3-fac501057633
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:39)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at repository.homePage.clickHeaderDropDownSignIn(homePage.java:84)
+at testcases.homePageTC2.tc001_Login(homePageTC2.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc001_Login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.homePageTC2@48f2bd5b]" started-at="2025-08-13T20:19:11 IST" name="tearDown" finished-at="2025-08-13T20:19:11 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.homePageTC2@48f2bd5b]" started-at="2025-08-13T22:08:19 IST" name="tearDown" finished-at="2025-08-13T22:08:19 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
