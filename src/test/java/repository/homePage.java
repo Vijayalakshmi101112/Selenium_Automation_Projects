@@ -79,6 +79,7 @@ public class homePage extends dockerWithChrome{
 	 */
 	public void clickHeaderDropDownSignIn() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='twotabsearchtextbox']")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", searchBox);
 		headerDropDownSignIn.click();

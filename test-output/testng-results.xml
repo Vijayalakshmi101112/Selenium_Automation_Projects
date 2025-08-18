@@ -2,34 +2,38 @@
 <testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-13T22:07:32 IST" name="Suite" finished-at="2025-08-13T22:08:19 IST" duration-ms="46332">
+  <suite started-at="2025-08-18T20:32:52 IST" name="Suite" finished-at="2025-08-18T20:33:13 IST" duration-ms="21159">
     <groups>
     </groups>
-    <test started-at="2025-08-13T22:07:32 IST" name="CBTS Automation Testing" finished-at="2025-08-13T22:08:19 IST" duration-ms="46332">
+    <test started-at="2025-08-18T20:32:52 IST" name="CBTS Automation Testing" finished-at="2025-08-18T20:33:13 IST" duration-ms="21159">
       <class name="testcases.homePageTC3">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.homePageTC3@5656be13]" started-at="2025-08-13T22:07:33 IST" name="setUp" finished-at="2025-08-13T22:07:33 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.homePageTC3@5656be13]" started-at="2025-08-18T20:32:52 IST" name="setUp" finished-at="2025-08-18T20:32:52 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="tc002_VerifySearchFunctionality()[pri:0, instance:testcases.homePageTC3@5656be13]" started-at="2025-08-13T22:07:33 IST" name="tc002_VerifySearchFunctionality" finished-at="2025-08-13T22:08:19 IST" duration-ms="45996" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="tc002_VerifySearchFunctionality()[pri:0, instance:testcases.homePageTC3@5656be13]" started-at="2025-08-18T20:32:52 IST" name="tc002_VerifySearchFunctionality" finished-at="2025-08-18T20:33:13 IST" duration-ms="20774" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[java.io.IOException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@7fcca23f rejected from java.util.concurrent.ThreadPoolExecutor@78bbe993[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 124]
+              <![CDATA[Unable to find session with ID: acbaf10f52b1725ae55ba387a7826eef
+Build info: version: '4.34.0', revision: '2a4c61c498'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87.2-microsoft-standard-WSL2', java.version: '21.0.8'
+Driver info: driver.version: unknown
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'SUBBIAH440G9', ip: '192.168.29.138', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [f14e5253-cb8f-4f98-a1e3-fac501057633, isElementDisplayed {id=50d9b326-2159-4bf8-b3a2-0823894010bf}]
-Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 141.0, container:hostname: 1ae758e81fbc, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 6.6.87.2-microsoft-standard..., moz:processID: 1119, moz:profile: /tmp/rust_mozprofile05gsdO, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdpEnabled: false, se:containerName: 1ae758e81fbc, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.18.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
-Element: [[RemoteWebDriver: firefox on LINUX (f14e5253-cb8f-4f98-a1e3-fac501057633)] -> xpath: //div[contains(@class,'breadcrumb-all-filters-button-container')]//span[contains(text(),'results for')]]]]>
+Command: [acbaf10f52b1725ae55ba387a7826eef, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.183, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36195}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.7:4444/sessio..., se:cdpVersion: 138.0.7204.183, se:containerName: 6149527a7ea5, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.18.0.7:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.7:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: java.io.IOException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@7fcca23f rejected from java.util.concurrent.ThreadPoolExecutor@78bbe993[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 124]
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Unable to find session with ID: acbaf10f52b1725ae55ba387a7826eef
+Build info: version: '4.34.0', revision: '2a4c61c498'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87.2-microsoft-standard-WSL2', java.version: '21.0.8'
+Driver info: driver.version: unknown
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'SUBBIAH440G9', ip: '192.168.29.138', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [f14e5253-cb8f-4f98-a1e3-fac501057633, isElementDisplayed {id=50d9b326-2159-4bf8-b3a2-0823894010bf}]
-Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 141.0, container:hostname: 1ae758e81fbc, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 6.6.87.2-microsoft-standard..., moz:processID: 1119, moz:profile: /tmp/rust_mozprofile05gsdO, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdpEnabled: false, se:containerName: 1ae758e81fbc, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.18.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
-Element: [[RemoteWebDriver: firefox on LINUX (f14e5253-cb8f-4f98-a1e3-fac501057633)] -> xpath: //div[contains(@class,'breadcrumb-all-filters-button-container')]//span[contains(text(),'results for')]]
+Command: [acbaf10f52b1725ae55ba387a7826eef, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.183, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36195}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.7:4444/sessio..., se:cdpVersion: 138.0.7204.183, se:containerName: 6149527a7ea5, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.18.0.7:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.7:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -41,16 +45,13 @@ at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpRespo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:39)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:307)
-at repository.homePage.searchkeyword(homePage.java:122)
-at testcases.homePageTC3.tc002_VerifySearchFunctionality(homePageTC3.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:455)
+at docker.dockerWithChrome.onTestFailure(dockerWithChrome.java:125)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:99)
+at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:275)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:728)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
@@ -62,43 +63,45 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:842)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc002_VerifySearchFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.homePageTC3@5656be13]" started-at="2025-08-13T22:08:19 IST" name="tearDown" finished-at="2025-08-13T22:08:19 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.homePageTC3@5656be13]" started-at="2025-08-18T20:33:13 IST" name="tearDown" finished-at="2025-08-18T20:33:13 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.homePageTC3 -->
       <class name="testcases.homePageTC2">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.homePageTC2@48f2bd5b]" started-at="2025-08-13T22:07:33 IST" name="setUp" finished-at="2025-08-13T22:07:33 IST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.homePageTC2@48f2bd5b]" started-at="2025-08-18T20:32:52 IST" name="setUp" finished-at="2025-08-18T20:32:52 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="tc001_Login()[pri:0, instance:testcases.homePageTC2@48f2bd5b]" started-at="2025-08-13T22:07:33 IST" name="tc001_Login" finished-at="2025-08-13T22:08:17 IST" duration-ms="44562" status="FAIL">
+        <test-method signature="tc001_Login()[pri:0, instance:testcases.homePageTC2@48f2bd5b]" started-at="2025-08-18T20:32:52 IST" name="tc001_Login" finished-at="2025-08-18T20:33:13 IST" duration-ms="20546" status="FAIL">
           <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[The element with the reference dc1b75c7-bc69-485c-91c4-a1666301405f is stale; either its node document is not the active document, or it is no longer connected to the DOM
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.183)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'SUBBIAH440G9', ip: '192.168.29.138', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [f14e5253-cb8f-4f98-a1e3-fac501057633, clickElement {id=dc1b75c7-bc69-485c-91c4-a1666301405f}]
-Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 141.0, container:hostname: 1ae758e81fbc, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 6.6.87.2-microsoft-standard..., moz:processID: 1119, moz:profile: /tmp/rust_mozprofile05gsdO, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdpEnabled: false, se:containerName: 1ae758e81fbc, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.18.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
-Element: [[RemoteWebDriver: firefox on LINUX (f14e5253-cb8f-4f98-a1e3-fac501057633)] -> xpath: //div[@id='nav-link-accountList']]
-Session ID: f14e5253-cb8f-4f98-a1e3-fac501057633]]>
+Command: [acbaf10f52b1725ae55ba387a7826eef, clickElement {id=f.B193FFB61D8113CD2E95743418B92AE7.d.9A6B623D94359188B78D27F081FAE9F1.e.21}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.183, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36195}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.7:4444/sessio..., se:cdpVersion: 138.0.7204.183, se:containerName: 6149527a7ea5, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.18.0.7:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.7:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on LINUX (acbaf10f52b1725ae55ba387a7826eef)] -> xpath: //button[text()='Continue shopping']]
+Session ID: acbaf10f52b1725ae55ba387a7826eef]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element with the reference dc1b75c7-bc69-485c-91c4-a1666301405f is stale; either its node document is not the active document, or it is no longer connected to the DOM
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.183)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'SUBBIAH440G9', ip: '192.168.29.138', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [f14e5253-cb8f-4f98-a1e3-fac501057633, clickElement {id=dc1b75c7-bc69-485c-91c4-a1666301405f}]
-Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 141.0, container:hostname: 1ae758e81fbc, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 6.6.87.2-microsoft-standard..., moz:processID: 1119, moz:profile: /tmp/rust_mozprofile05gsdO, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdpEnabled: false, se:containerName: 1ae758e81fbc, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.18.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
-Element: [[RemoteWebDriver: firefox on LINUX (f14e5253-cb8f-4f98-a1e3-fac501057633)] -> xpath: //div[@id='nav-link-accountList']]
-Session ID: f14e5253-cb8f-4f98-a1e3-fac501057633
+Command: [acbaf10f52b1725ae55ba387a7826eef, clickElement {id=f.B193FFB61D8113CD2E95743418B92AE7.d.9A6B623D94359188B78D27F081FAE9F1.e.21}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.183, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36195}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.7:4444/sessio..., se:cdpVersion: 138.0.7204.183, se:containerName: 6149527a7ea5, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.18.0.7:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.7:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on LINUX (acbaf10f52b1725ae55ba387a7826eef)] -> xpath: //button[text()='Continue shopping']]
+Session ID: acbaf10f52b1725ae55ba387a7826eef
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -112,14 +115,8 @@ at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecuto
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at repository.homePage.clickHeaderDropDownSignIn(homePage.java:84)
-at testcases.homePageTC2.tc001_Login(homePageTC2.java:31)
+at repository.homePage.clickContinueShoppingButton(homePage.java:72)
+at testcases.homePageTC2.tc001_Login(homePageTC2.java:30)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -141,7 +138,7 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc001_Login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.homePageTC2@48f2bd5b]" started-at="2025-08-13T22:08:19 IST" name="tearDown" finished-at="2025-08-13T22:08:19 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.homePageTC2@48f2bd5b]" started-at="2025-08-18T20:33:13 IST" name="tearDown" finished-at="2025-08-18T20:33:13 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
