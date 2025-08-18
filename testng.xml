@@ -6,11 +6,11 @@
     </listeners>
    <test name="CBTS Automation Testing">
         <classes>
-           <class name="testcases.homePageTC2"> </class>
-           <class name="testcases.homePageTC3"> </class>
-           <!--class name="testcases.ChromeTest1"> </!class>
+           <!--class name="testcases.homePageTC2"> </!class>
+           <class name="testcases.homePageTC3"> </class-->
+           <class name="testcases.ChromeTest1"> </class>
            <class name="testcases.ChromeTest2"> </class>
-           <class name="testcases.ChromeTest1"> </class-->
+        
         
         </classes>     
     </test>

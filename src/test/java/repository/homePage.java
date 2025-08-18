@@ -91,7 +91,7 @@ public class homePage extends dockerWithChrome{
 	public void enterMobileNoOrEmailAndContinue() {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='ap_email_login']")));
-		mobileEmailTextField.sendKeys("9962905981");
+		mobileEmailTextField.sendKeys("9789915077");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@id='continue']")));
 		continueButton.click();
 	}
@@ -100,7 +100,7 @@ public class homePage extends dockerWithChrome{
 	 * enter Password And Click On SignIn
 	 */
 	public void enterPasswordAndClickOnSignIn() {
-		passwordTextField.sendKeys("Testing@123");
+		passwordTextField.sendKeys("Welcome@123#");
 		signInButton.click();
 	}
 
@@ -108,7 +108,7 @@ public class homePage extends dockerWithChrome{
 	 * verify User Is LoggedIn
 	 */
 	public void verifyUserIsLoggedIn() {
-		if(headerText.getText().equals("Hello, rdevi.raghu333@gmail.com")) {
+		if(headerText.getText().equals("Hello, Vijayalakshmi")) {
 			test.log(LogStatus.PASS, "User is logged in successfully "+test.addScreenCapture(getScreenShot()));
 		}
 		else {
