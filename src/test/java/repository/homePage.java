@@ -78,7 +78,7 @@ public class homePage extends dockerWithChrome{
 	 * @throws InterruptedException
 	 */
 	public void clickHeaderDropDownSignIn() throws InterruptedException {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='twotabsearchtextbox']")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", searchBox);
@@ -89,7 +89,7 @@ public class homePage extends dockerWithChrome{
 	 * enter Mobile No Or Email And Continue
 	 */
 	public void enterMobileNoOrEmailAndContinue() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='ap_email_login']")));
 		mobileEmailTextField.sendKeys("9789915077");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@id='continue']")));

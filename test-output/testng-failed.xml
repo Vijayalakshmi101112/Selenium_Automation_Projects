@@ -6,11 +6,11 @@
   </listeners>
   <test thread-count="2" parallel="classes" name="CBTS Automation Testing(failed)">
     <classes>
-      <class name="testcases.ChromeTest1">
+      <class name="testcases.ChromeTest2">
         <methods>
           <include name="test"/>
         </methods>
-      </class> <!-- testcases.ChromeTest1 -->
+      </class> <!-- testcases.ChromeTest2 -->
     </classes>
   </test> <!-- CBTS Automation Testing(failed) -->
 </suite> <!-- Failed suite [Suite] -->

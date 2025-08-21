@@ -8,6 +8,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
 import java.util.Random;
@@ -86,7 +87,7 @@ public class dockerWithChrome implements ITestListener{
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		//driver.timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		test = extentReporter.startTest(result.getName());
 		test.log(LogStatus.INFO,"Test Started");
 		driver.get("https://www.amazon.com");
